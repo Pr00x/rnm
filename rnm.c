@@ -13,10 +13,10 @@ int main(int argc, char *argv[]) {
 		return 0;
 	}
 	else if(!argv[1] || !argv[2]) {
-    puts("rnm: missing operand.\x0ATry 'rnm --help' for more information.");
+    		puts("rnm: missing operand.\x0ATry 'rnm --help' for more information.");
 
-    return -1;
-  }
+    		return -1;
+  	}
 
 	int rnm = rename(argv[1], argv[2]);
 
